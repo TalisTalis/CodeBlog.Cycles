@@ -60,6 +60,15 @@ namespace CodeBlog.Cycles
             Console.WriteLine();
             Console.WriteLine($"Произведение элементов массива равна {multElementsArray}");
             Console.WriteLine();
+
+            Console.WriteLine();
+            Console.WriteLine("Вывод коллекции: ");
+            Console.WriteLine();
+
+            foreach (var item in arr)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
