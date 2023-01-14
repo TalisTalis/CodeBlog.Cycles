@@ -12,7 +12,7 @@ namespace CodeBlog.Cycles
 
             while (i < arr.Length)
             {
-                Console.Write($"Введите {i} элемент массива: ");
+                Console.Write($"Введите {i + 1} элемент массива: ");
 
                 if (int.TryParse(Console.ReadLine(), out int res))
                 {
@@ -46,13 +46,13 @@ namespace CodeBlog.Cycles
             Console.WriteLine($"Разность элементов массива равна {diffElementsArray}");
             Console.WriteLine();
 
-            int multElementsArray = arr[0];
+            long multElementsArray = (long)arr[0];
 
             int l = 1;
 
             do
             {
-                multElementsArray *= arr[l];
+                multElementsArray *= (long)arr[l];
                 l++;
 
             } while (l < arr.Length);
